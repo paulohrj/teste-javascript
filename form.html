@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+
+    <script src="codigojs.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <form  class="form" onsubmit="validaCampos();">
+        <div>
+            <label class="hora" for="email">Email</label>
+            <input type="email" id="email" name="emailSend" placeholder="email@email.com.br"/>
+        </div>
+        <div>
+            <label class="hora" for="date">Date</label>
+            <input type="date" id="dateInput" name="dateSend"/>
+        </div>
+        <div>
+            <label for="msgText">Text</label>
+            <input type="text" id="msgText" name="textSend" placeholder="Your message text"/>
+        </div>
+        <div>
+         <fieldset><legend>Linguagem</legend>
+           <input type="checkbox" id="html" name="linguagem" value="html">Java<br/>
+           <input type="checkbox" id="c"  name="linguagem" value="csharp">C#<br/>
+           <input type="checkbox" id="php" name="linguagem" value="php">Php<br/>
+         </fieldset>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="ageSend" placeholder="Number"/>
+        </div>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
