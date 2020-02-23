@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
 
-    <script src="codigojs.js"></script>
+    <script src="form.js"></script>
     <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
     <form  class="form" onsubmit="validaCampos();">
-        <div>
+        <div class="form-input">
             <label class="hora" for="email">Email</label>
-            <input type="email" id="email" name="emailSend" placeholder="email@email.com.br"/>
+            <input type="email" id="email" name="email" placeholder="email@email.com.br"/>
         </div>
-        <div>
+        <div class="form-input" >
             <label class="hora" for="date">Date</label>
-            <input type="date" id="dateInput" name="dateSend"/>
+            <input type="date" id="dateInput" name="date"/>
         </div>
-        <div>
+        <div class="form-input">
             <label for="msgText">Text</label>
-            <input type="text" id="msgText" name="textSend" placeholder="Your message text"/>
+            <input type="text" id="msgText" name="text" placeholder="Your message text"/>
         </div>
-        <div>
-         <fieldset><legend>Linguagem</legend>
-           <input type="checkbox" id="html" name="linguagem" value="html">Java<br/>
-           <input type="checkbox" id="c"  name="linguagem" value="csharp">C#<br/>
-           <input type="checkbox" id="php" name="linguagem" value="php">Php<br/>
+        <div class="form-input">
+         <fieldset><legend>Linguage</legend>
+           <input type="checkbox" id="html" name="language" value="html">Java<br/>
+           <input type="checkbox" id="c"  name="language" value="csharp">C#<br/>
+           <input type="checkbox" id="php" name="language" value="php">Php<br/>
          </fieldset>
         </div>
-        <div>
+        <div class="form-input">
             <label for="age">Age</label>
-            <input type="number" id="age" name="ageSend" placeholder="Number"/>
+            <input type="number" id="age" name="age" placeholder="Number"/>
         </div>
         <input type="submit" name="submit" value="Submit">
     </form>
