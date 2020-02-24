@@ -13,18 +13,18 @@
     <form  class="form" onsubmit="validaCampos();">
         <div class="form-input">
             <label class="hora" for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="email@email.com.br"/>
+            <input class="form-text-input" type="email" id="email" name="email" placeholder="email@email.com.br"/>
         </div>
         <div class="form-input" >
             <label class="hora" for="date">Date</label>
-            <input type="date" id="dateInput" name="date"/>
+            <input class="form-text-input" type="date" id="dateInput" name="date"/>
         </div>
         <div class="form-input">
             <label for="msgText">Text</label>
-            <input type="text" id="msgText" name="text" placeholder="Your message text"/>
+            <input  class="form-text-input" type="text" id="msgText" name="text" placeholder="Your message text"/>
         </div>
         <div class="form-input">
-         <fieldset><legend>Linguage</legend>
+         <fieldset class="form-fieldset"><legend>Linguage</legend>
            <input type="checkbox" id="html" name="language" value="html">Java<br/>
            <input type="checkbox" id="c"  name="language" value="csharp">C#<br/>
            <input type="checkbox" id="php" name="language" value="php">Php<br/>
@@ -32,9 +32,14 @@
         </div>
         <div class="form-input">
             <label for="age">Age</label>
-            <input type="number" id="age" name="age" placeholder="Number"/>
+            <input class="form-text-input"type="number" id="age" name="age" placeholder="Number"/>
         </div>
-        <input type="submit" name="submit" value="Submit">
+        <div class="form-action">
+            <button class="form-button" type="submit" name="submit">
+                Submit
+            </button>
+        </div>
+        
     </form>
 </body>
 </html>
